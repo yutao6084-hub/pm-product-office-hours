@@ -53,6 +53,21 @@ C:\Users\<你的用户名>\.codex\skills\pm-product-office-hours
 
 重启 Codex 或开启新会话后即可使用。
 
+## 更新到最新版
+
+如果你已经安装过：
+
+```powershell
+cd "$env:USERPROFILE\.codex\skills\pm-product-office-hours"
+git pull
+```
+
+如果 Codex 没有自动触发这个 Skill，直接在提示词里显式写：
+
+```text
+使用 $pm-product-office-hours ...
+```
+
 ## 最快使用
 
 ### 1. 定义一个新产品
@@ -108,14 +123,36 @@ C:\Users\<你的用户名>\.codex\skills\pm-product-office-hours
 
 ## 工作模式
 
-| 模式 | 适用场景 |
+| 类型 | 适用场景 |
 |---|---|
-| 0-1 Product Definition | 从想法、原型或模糊方向开始定义产品 |
-| One-Hour PRD Review | 已有 PRD/需求列表，需要严厉评审 |
-| Investor Challenge | 准备融资、路演、董事会或 CEO 级产品质询 |
-| Industry Template | SaaS、硬件、AI Agent、消费 App、教育等垂直产品 |
-| Output Formatting | 需要 Markdown、DOCX、PPT、飞书文档结构 |
-| Self-Check | 检查证据、MVP、指标、差异化、商业模式是否站得住 |
+| 主模式：0-1 Product Definition | 从想法、原型或模糊方向开始定义产品 |
+| 主模式：One-Hour PRD Review | 已有 PRD/需求列表，需要严厉评审 |
+| 主模式：Investor Challenge | 准备融资、路演、董事会或 CEO 级产品质询 |
+| 辅助层：Industry Template | SaaS、硬件、AI Agent、消费 App、教育等垂直产品 |
+| 辅助层：Output Formatting | 需要 Markdown、DOCX、PPT、飞书文档结构 |
+| 质量门：Self-Check | 检查证据、MVP、指标、差异化、商业模式是否站得住 |
+
+## 内部测试
+
+本仓库包含一份公开的内部测试报告：
+
+[tests/internal-test-report.md](tests/internal-test-report.md)
+
+测试覆盖：
+
+- 0-1 新产品定义
+- 已有 PRD 评审
+- 投资人视角质询
+- 硬件 + 教育行业模板
+- 多格式输出
+- 自检器
+- 引用文件完整性和 Skill 结构校验
+
+## 边界说明
+
+- 这个 Skill 不会替你编造用户证据、付费数据或市场规模。
+- 这个 Skill 不直接承诺医疗、法律、金融等高风险结论。
+- 如果要求生成 DOCX/PPT/飞书文档，是否能真正创建文件取决于当前 Codex 环境是否有对应工具；否则会输出 copy-ready 结构。
 
 ## 仓库结构
 
@@ -135,6 +172,8 @@ pm-product-office-hours/
 │  └─ self-checker.md
 ├─ examples/
 │  └─ sample-prompts.md
+├─ tests/
+│  └─ internal-test-report.md
 ├─ CHANGELOG.md
 ├─ RELEASE_NOTES.md
 ├─ ROADMAP.md

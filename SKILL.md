@@ -20,20 +20,35 @@ Default stance:
 - Do not invent user evidence, traction, revenue, metrics, or market proof.
 - Do not move to final output while the core user/problem/MVP is vague unless the user explicitly asks for a draft with assumptions.
 
-## First choose the mode
+## First choose the primary mode and optional lenses
 
-At the start, infer the mode from the user request. If unclear, ask at most two short questions.
+At the start, infer one **primary mode** and any optional **lenses/layers** from the user request. If unclear, ask at most two short questions.
 
-| Mode | Use when | Required reference |
+Use this mental model:
+
+- Primary mode decides the main workflow.
+- Industry template is a lens layered onto the primary mode.
+- Output formatting is a packaging layer.
+- Self-check is a final quality gate for substantial documents.
+
+| Type | Use when | Required reference |
 |---|---|---|
-| 0-1 Product Definition | The user has an idea, prototype, or fuzzy product direction | `references/phases.md`, `references/question-bank.md`, `references/output-pack.md` |
-| One-Hour PRD Review | The user already has a PRD, product draft, or requirements list and wants critique | `references/prd-review-mode.md`, `references/self-checker.md` |
-| Investor Challenge | The user wants融资、商业模式、市场、护城河、团队优势、CEO 叙事 | `references/investor-challenge.md` |
-| Industry Template | The product belongs to SaaS, hardware, AI Agent, consumer app, education, or similar | `references/industry-templates.md` |
-| Output Formatting | The user asks for Markdown, DOCX, PPT, Feishu/Lark-ready content, or multiple formats | `references/output-formats.md` |
-| Self-Check | The user asks “帮我检查”, “是否靠谱”, “有没有漏洞”, or final docs are produced | `references/self-checker.md` |
+| Primary: 0-1 Product Definition | The user has an idea, prototype, or fuzzy product direction | `references/phases.md`, `references/question-bank.md`, `references/output-pack.md` |
+| Primary: One-Hour PRD Review | The user already has a PRD, product draft, or requirements list and wants critique | `references/prd-review-mode.md`, `references/self-checker.md` |
+| Primary: Investor Challenge | The user wants融资、商业模式、市场、护城河、团队优势、CEO 叙事 | `references/investor-challenge.md` |
+| Lens: Industry Template | The product belongs to SaaS, hardware, AI Agent, consumer app, education, or similar | `references/industry-templates.md` |
+| Layer: Output Formatting | The user asks for Markdown, DOCX, PPT, Feishu/Lark-ready content, or multiple formats | `references/output-formats.md` |
+| Gate: Self-Check | The user asks “帮我检查”, “是否靠谱”, “有没有漏洞”, or final docs are produced | `references/self-checker.md` |
 
 Always run the self-checker before the final answer when producing product documents.
+
+## Conversation output rules
+
+- During interview mode, ask 1-3 numbered questions at a time. Do not dump the full framework into the chat.
+- If the user asks for speed, ask at most five high-impact questions, then draft with assumptions.
+- If the user provides enough context, stop interviewing and produce the requested artifact.
+- If the user asks for “全部输出”, produce the canonical Markdown package first, then append condensed DOCX/PPT/Feishu structures instead of repeating all content three times.
+- If the user asks for actual DOCX, PPT, or Feishu creation, use the available document/presentation/Feishu tools when present. If they are unavailable, say clearly that the output is copy-ready rather than created as a file/cloud doc.
 
 ## Core workflow
 
@@ -134,7 +149,7 @@ Unless the user asks for a narrower output, produce:
 11. CEO/team/investor short narrative
 12. Post-launch growth and iteration plan, if relevant
 13. Self-check scorecard and repair notes
-14. Suggested output format package: Markdown / DOCX / PPT / Feishu-ready outline
+14. Suggested output format package: Markdown / DOCX / PPT / Feishu-ready outline, only when requested
 
 ## Hard boundaries
 

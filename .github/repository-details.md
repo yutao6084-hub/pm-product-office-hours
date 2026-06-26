@@ -28,19 +28,19 @@ investor-readiness
 Tag:
 
 ```text
-v0.2.0
+v0.2.1
 ```
 
 Title:
 
 ```text
-v0.2.0 - Product Review, Investor Challenge, Industry Templates
+v0.2.1 - QA Hardening
 ```
 
 Short summary:
 
 ```text
-Adds industry templates, one-hour PRD review, investor challenge, multi-format output guidance, and a product-definition self-checker.
+Clarifies mode routing, adds public internal test coverage, improves README onboarding, and tightens multi-format output behavior.
 ```
 
 ## Optional GitHub CLI commands
@@ -61,8 +61,8 @@ gh repo edit yutao6084-hub/pm-product-office-hours `
   --add-topic product-review `
   --add-topic investor-readiness
 
-gh release create v0.2.0 `
+gh release create v0.2.1 `
   --repo yutao6084-hub/pm-product-office-hours `
-  --title "v0.2.0 - Product Review, Investor Challenge, Industry Templates" `
+  --title "v0.2.1 - QA Hardening" `
   --notes-file RELEASE_NOTES.md
 ```

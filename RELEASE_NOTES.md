@@ -1,5 +1,25 @@
 # Release Notes
 
+## v0.2.1 - QA Hardening
+
+This release improves clarity and testability.
+
+### Added
+
+- Public internal QA report: `tests/internal-test-report.md`
+- README update command for existing users
+- README boundary notes for evidence, high-risk claims, and file/cloud-doc creation
+- Scenario coverage notes for all major modes
+
+### Fixed / improved
+
+- Clarified that:
+  - Product Definition, PRD Review, and Investor Challenge are primary modes
+  - Industry Template is an optional lens
+  - Output Formatting is a packaging layer
+  - Self-Check is a final quality gate
+- Reduced over-output risk by making multi-format package generation conditional on explicit user request.
+
 ## v0.2.0 - Product Review, Investor Challenge, Industry Templates
 
 `pm-product-office-hours` now supports a fuller product-definition workflow for founders, CEOs, and product managers.

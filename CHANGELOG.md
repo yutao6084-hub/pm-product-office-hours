@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file.
 
+## v0.2.1 - 2026-06-26
+
+QA hardening release.
+
+### Added
+
+- Added public internal test report in `tests/internal-test-report.md`.
+- Added README update instructions, troubleshooting note, and boundary statement.
+- Added test coverage notes for 0-1 definition, PRD review, investor challenge, industry templates, multi-format output, and self-check.
+
+### Changed
+
+- Clarified that Product Definition, PRD Review, and Investor Challenge are primary modes.
+- Clarified that Industry Template, Output Formatting, and Self-Check are lenses/layers rather than standalone workflows.
+- Reduced default output risk by making multi-format packaging conditional on user request.
+
 ## v0.2.0 - 2026-06-26
 
 Expanded the skill from a 0-1 product-definition interviewer into a broader product decision assistant for founders, CEOs, and product managers.
