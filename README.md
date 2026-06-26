@@ -1,5 +1,13 @@
 # PM Product Office Hours
 
+> Strict product-definition Office Hours skill for founders, CEOs, and 0-1 product builders.
+
+**Repository description**：面向创业者、CEO 和 0-1 产品负责人的严厉产品定义 Office Hours Skill，帮助把模糊想法追问成可验证、可执行、可融资沟通的产品定义包。
+
+**Recommended GitHub Topics**：`product-management`、`prd`、`startup`、`codex-skill`、`mvp`、`product-strategy`、`founder`、`product-discovery`
+
+**Current release**：`v0.1.0`，初始开源版本。
+
 一个给创业者、CEO、0-1 产品负责人的 Codex Skill：用“严厉面试官”式问答，把模糊产品想法逼到清晰、可验证、可执行的产品定义包。
 
 它不是普通 PRD 生成器。它会先追问真实用户、具体场景、当前替代方案、验证证据、MVP 取舍和增长假设，然后再输出产品定义、PRD、MVP、路线图、指标、验证计划和风险清单。
