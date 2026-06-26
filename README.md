@@ -2,7 +2,7 @@
 
 > Strict product-definition Office Hours skill for founders, CEOs, product managers, and 0-1 builders.
 
-一个面向创业者、CEO、产品经理的 Codex Skill：用“严厉面试官”式问答，把模糊产品想法、PRD 草稿、融资叙事或增长问题，拆成可验证、可执行、可评审的产品定义包。
+一个面向创业者、CEO、产品经理的 AI Skill：用“严厉面试官”式问答，把模糊产品想法、PRD 草稿、融资叙事或增长问题，拆成可验证、可执行、可评审的产品定义包。
 
 ## 30 秒看懂
 
