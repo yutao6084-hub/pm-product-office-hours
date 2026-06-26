@@ -48,7 +48,7 @@
 
 ```powershell
 cd "$env:USERPROFILE\.codex\skills"
-git clone https://github.com/YOUR_NAME/pm-product-office-hours.git
+git clone https://github.com/yutao6084-hub/pm-product-office-hours.git
 ```
 
 或手动复制到：
