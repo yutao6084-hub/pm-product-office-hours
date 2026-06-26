@@ -18,7 +18,7 @@
 
 然后再输出 PRD、MVP、路线图、验证计划、指标体系、自检报告，以及 DOCX/PPT/飞书文档可用结构。
 
-## v0.2.0 新增能力
+## 当前能力
 
 | 能力 | 说明 |
 |---|---|
@@ -27,6 +27,7 @@
 | 投资人视角质询 | 从市场、护城河、商业模式、团队优势、证据和 90 天里程碑进行严厉挑战 |
 | 多格式输出 | 支持 Markdown、DOCX-ready、PPT 10 页大纲、飞书/Lark 文档块结构 |
 | 自检器 | 检查是否脑补证据、MVP 是否过大、指标是否缺失、差异化是否空泛 |
+| 黄金样例 | 提供 3 个匿名化真实感案例，展示完整输出效果 |
 
 ## 适合谁
 
@@ -102,6 +103,18 @@ git pull
 
 更多示例见 [examples/sample-prompts.md](examples/sample-prompts.md)。
 
+## 直接看输出效果
+
+如果你不想先读说明，可以直接看这 3 个黄金样例：
+
+| 示例 | 展示能力 |
+|---|---|
+| [儿童家庭训练硬件 + App](examples/outputs/01-0-to-1-hardware-education.md) | 0-1 产品定义、硬件/教育行业模板、MVP、PRD、自检 |
+| [AI 销售跟进 SaaS PRD 评审](examples/outputs/02-prd-review-saas.md) | 一小时 PRD 评审、漏洞清单、范围裁剪、修正版 PRD |
+| [跨境电商运营 AI Agent 投资人质询](examples/outputs/03-investor-challenge-ai-agent.md) | 投资人视角、AI Agent 边界、护城河、90 天验证计划 |
+
+样例索引见 [examples/outputs/README.md](examples/outputs/README.md)。
+
 ## 能输出什么
 
 默认输出完整产品定义包：
@@ -119,7 +132,12 @@ git pull
 11. CEO / 团队 / 投资人简版叙事
 12. 上线后增长与迭代计划
 13. 自检评分与修正建议
-14. Markdown / DOCX / PPT / 飞书可用结构
+
+如果你明确要求多格式输出，还可以附加：
+
+- DOCX-ready 结构
+- PPT 10 页大纲
+- 飞书/Lark 文档块结构
 
 ## 工作模式
 
@@ -171,7 +189,11 @@ pm-product-office-hours/
 │  ├─ output-formats.md
 │  └─ self-checker.md
 ├─ examples/
-│  └─ sample-prompts.md
+│  ├─ sample-prompts.md
+│  └─ outputs/
+│     ├─ 01-0-to-1-hardware-education.md
+│     ├─ 02-prd-review-saas.md
+│     └─ 03-investor-challenge-ai-agent.md
 ├─ tests/
 │  └─ internal-test-report.md
 ├─ CHANGELOG.md

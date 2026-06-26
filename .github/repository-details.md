@@ -28,19 +28,19 @@ investor-readiness
 Tag:
 
 ```text
-v0.2.1
+v0.2.2
 ```
 
 Title:
 
 ```text
-v0.2.1 - QA Hardening
+v0.2.2 - Golden Examples
 ```
 
 Short summary:
 
 ```text
-Clarifies mode routing, adds public internal test coverage, improves README onboarding, and tightens multi-format output behavior.
+Adds three anonymized golden example outputs so new users can immediately see how the skill works.
 ```
 
 ## Optional GitHub CLI commands
@@ -61,8 +61,8 @@ gh repo edit yutao6084-hub/pm-product-office-hours `
   --add-topic product-review `
   --add-topic investor-readiness
 
-gh release create v0.2.1 `
+gh release create v0.2.2 `
   --repo yutao6084-hub/pm-product-office-hours `
-  --title "v0.2.1 - QA Hardening" `
+  --title "v0.2.2 - Golden Examples" `
   --notes-file RELEASE_NOTES.md
 ```

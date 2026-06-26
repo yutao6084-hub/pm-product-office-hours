@@ -1,7 +1,7 @@
 # Internal Test Report
 
-Date: 2026-06-26  
-Version under test: v0.2.1  
+Date: 2026-06-26
+Version under test: v0.2.2
 Repository: `yutao6084-hub/pm-product-office-hours`
 
 ## Summary
@@ -18,6 +18,7 @@ The skill passed structural validation and scenario-level smoke tests. The main 
 | Reference files exist | Pass | All references named by `SKILL.md` exist |
 | README onboarding | Pass | README includes installation, update command, examples, modes, and boundaries |
 | Encoding | Pass | Main docs render as readable UTF-8 Chinese/English |
+| Golden examples | Pass | `examples/outputs/` includes 3 anonymized outputs covering major modes |
 
 ## Scenario smoke tests
 
@@ -29,6 +30,14 @@ The skill passed structural validation and scenario-level smoke tests. The main 
 | Hardware + education | “按硬件 + 教育模板追问” | Apply industry lens, check BOM, comfort, child safety, parent value, non-medical wording | Pass |
 | Multi-format output | “输出 Markdown、DOCX、PPT、飞书结构” | Produce canonical Markdown plus condensed copy-ready format structures | Pass |
 | Self-check | “检查是否靠谱” or final product docs | Score evidence, MVP, metrics, differentiation, risks, and repair weak sections | Pass |
+
+## Golden example checks
+
+| Example | Coverage | Result |
+|---|---|---|
+| `01-0-to-1-hardware-education.md` | 0-1 definition, hardware lens, education lens, non-medical wording, MVP cut, self-check | Pass |
+| `02-prd-review-saas.md` | One-Hour PRD Review, scorecard, top risks, missing decisions, rewritten PRD skeleton | Pass |
+| `03-investor-challenge-ai-agent.md` | Investor challenge, AI Agent boundary, moat, business model, 90-day proof plan | Pass |
 
 ## Issues found and fixed
 
@@ -52,6 +61,11 @@ Fix: Added this internal test report and linked it from README.
 Problem: Existing users did not have a quick update command, and file/cloud-doc creation boundaries were not obvious.  
 Fix: README now includes update instructions and boundary notes.
 
+### 5. No concrete output examples
+
+Problem: Users could understand the feature list, but not see what a strong answer looks like.
+Fix: Added three golden examples under `examples/outputs/`.
+
 ## Remaining limitations
 
 - Scenario tests are rule-level smoke tests, not automated end-to-end model evaluations.
@@ -61,6 +75,6 @@ Fix: README now includes update instructions and boundary notes.
 ## Suggested next tests
 
 - Run blind user testing with 3-5 founders using real product ideas.
-- Add golden example outputs for each mode.
+- Add more golden examples for healthcare, enterprise services, developer tools, and consumer apps.
 - Add a lightweight rubric for scoring generated PRDs across multiple model runs.
 - Add examples for healthcare, enterprise services, and developer tools once those templates are added.

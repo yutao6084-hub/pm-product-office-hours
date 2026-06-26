@@ -1,5 +1,26 @@
 # Release Notes
 
+## v0.2.2 - Golden Examples
+
+This release makes the repository easier to understand at a glance by adding concrete example outputs.
+
+### Added
+
+- `examples/outputs/README.md`
+- `examples/outputs/01-0-to-1-hardware-education.md`
+- `examples/outputs/02-prd-review-saas.md`
+- `examples/outputs/03-investor-challenge-ai-agent.md`
+
+### What the examples show
+
+- A 0-1 hardware + education product definition package with MVP scope, PRD, validation plan, metrics, and self-check.
+- A one-hour SaaS PRD review with verdict, scorecard, top risks, missing decisions, and rewritten PRD skeleton.
+- An AI Agent investor challenge with harsh questions, stronger founder answers, moat hypothesis, business model, and 90-day proof plan.
+
+### Why anonymized
+
+The examples are realistic but anonymized/fictional so users can learn the workflow without exposing private customer data, product strategy, metrics, or fundraising material.
+
 ## v0.2.1 - QA Hardening
 
 This release improves clarity and testability.

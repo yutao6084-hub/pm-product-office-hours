@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file.
 
+## v0.2.2 - 2026-06-26
+
+Golden examples release.
+
+### Added
+
+- Added `examples/outputs/` with three realistic anonymized golden examples:
+  - 0-1 hardware + education product definition
+  - SaaS PRD review
+  - AI Agent investor challenge
+- Added golden example index in `examples/outputs/README.md`.
+- Linked golden examples from README.
+- Added contribution guidance for future example outputs.
+- Expanded internal test report with golden example coverage.
+
+### Changed
+
+- Renamed README feature section from “v0.2.0 新增能力” to “当前能力”.
+- Clarified that examples are anonymized and should not be treated as business truth.
+
 ## v0.2.1 - 2026-06-26
 
 QA hardening release.

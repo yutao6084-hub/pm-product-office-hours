@@ -17,6 +17,28 @@
 - 不要接受模糊产品描述。
 - 不要让 AI 编造用户证据、收入、留存或市场数据。
 
+## 贡献黄金样例
+
+欢迎贡献 `examples/outputs/` 下的样例输出。样例应该帮助新用户快速看懂这个 Skill 的真实效果。
+
+要求：
+
+- 使用匿名化或虚构案例，不要暴露真实客户、真实收入、融资材料、内部策略。
+- 在文件开头说明是 fictional/anonymized example。
+- 至少包含：输入 prompt、核心输出、自检结果。
+- 明确标注事实、假设和未知。
+- 不要使用医疗、法律、金融等高风险承诺性表述。
+- 控制长度，让读者 3-5 分钟能读完核心内容。
+
+推荐覆盖这些类型：
+
+- 0-1 Product Definition
+- One-Hour PRD Review
+- Investor Challenge
+- Industry Template
+- Multi-format output
+- Self-check
+
 ## 校验
 
 修改后运行：
