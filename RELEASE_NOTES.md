@@ -1,55 +1,99 @@
 # Release Notes
 
-## v0.1.0 - Initial Public Release
+## v0.2.0 - Product Review, Investor Challenge, Industry Templates
 
-`pm-product-office-hours` is a Codex Skill for founders, CEOs, and 0-1 product builders who need sharper product definition before writing a PRD, pitching internally, building an MVP, or speaking with investors.
+`pm-product-office-hours` now supports a fuller product-definition workflow for founders, CEOs, and product managers.
 
-It behaves like a strict product-definition interviewer. Instead of immediately generating a polished but weak document, it first challenges vague assumptions:
+This release turns the previous roadmap ideas into real skill behavior:
 
-- Who is the real user?
-- What exact scene creates the pain?
-- What does the user do today instead?
-- What evidence proves the pain exists?
-- What is the smallest MVP worth building?
-- What should not be built yet?
-- What metrics prove the product is improving?
-- What risks could kill the product?
-- What story should the CEO, team, or investor hear?
+- Industry templates
+- One-hour PRD review
+- Investor-style challenge
+- Multi-format outputs
+- Product self-checker
 
-### Included in this release
+### What changed
 
-- Codex Skill instructions in `SKILL.md`
-- OpenAI agent metadata in `agents/openai.yaml`
-- Question bank for strict product interviews
-- Stage model for 0-1 product work
-- Output pack template for PRD and product definition
-- Example prompts
-- Roadmap
-- MIT license
+#### 1. Industry templates
 
-### Suggested GitHub repository details
+The skill now has specific templates for:
+
+- SaaS
+- Hardware
+- AI Agent
+- Consumer App
+- Education
+
+Each template includes domain-specific questions, metrics, and red flags.
+
+#### 2. One-Hour PRD Review mode
+
+If the user already has a PRD, the skill can audit it before rewriting:
+
+- user clarity
+- evidence strength
+- MVP scope
+- requirement buildability
+- edge cases
+- metrics
+- delivery readiness
+
+#### 3. Investor Challenge mode
+
+The skill can now challenge:
+
+- market size and urgency
+- why now
+- business model
+- buyer and sales motion
+- defensibility
+- traction evidence
+- founder-market fit
+- 90-day proof milestones
+
+#### 4. Output formats
+
+The skill can produce:
+
+- canonical Markdown package
+- DOCX-ready structure
+- PPT 10-slide outline
+- Feishu/Lark-ready document blocks
+
+#### 5. Self-checker
+
+Before finalizing, the skill can score and repair weak product definitions across:
+
+- user clarity
+- pain evidence
+- substitute clarity
+- MVP narrowness
+- requirement buildability
+- metrics
+- differentiation
+- business model
+- risk honesty
+
+### Recommended prompt
+
+```text
+使用 $pm-product-office-hours。请严格追问我，帮我把这个产品想法梳理成完整产品定义包，并最后输出自检评分、DOCX-ready 结构、PPT 大纲和飞书文档结构。
+```
+
+### Repository details
 
 Description:
 
 ```text
-Strict product-definition Office Hours skill for founders, CEOs, and 0-1 product builders.
+Strict product-definition Office Hours skill for founders, CEOs, product managers, and 0-1 builders.
 ```
 
 Topics:
 
 ```text
-product-management, prd, startup, codex-skill, mvp, product-strategy, founder, product-discovery
+product-management, prd, startup, codex-skill, mvp, product-strategy, founder, product-discovery, product-review, investor-readiness
 ```
 
-### Installation
+## v0.1.0 - Initial Public Release
 
-```powershell
-cd "$env:USERPROFILE\.codex\skills"
-git clone https://github.com/yutao6084-hub/pm-product-office-hours.git
-```
-
-Restart Codex or open a new conversation, then use:
-
-```text
-使用 $pm-product-office-hours 帮我把这个产品想法梳理成完整产品定义包。
-```
+Initial open-source release of a strict product-definition Codex Skill for founders, CEOs, and 0-1 product builders.

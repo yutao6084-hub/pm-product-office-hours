@@ -1,4 +1,4 @@
 interface:
   display_name: "PM Product Office Hours"
-  short_description: "严厉问答式产品定义与0-1决策工作流"
-  default_prompt: "Use $pm-product-office-hours to turn my rough product idea into a complete 0-1 product definition package."
+  short_description: "严厉问答式产品定义、PRD评审与投资人质询"
+  default_prompt: "Use $pm-product-office-hours to question my product idea, define the MVP, review risks, and output a PRD with self-check."

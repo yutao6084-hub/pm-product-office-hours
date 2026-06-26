@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file.
 
+## v0.2.0 - 2026-06-26
+
+Expanded the skill from a 0-1 product-definition interviewer into a broader product decision assistant for founders, CEOs, and product managers.
+
+### Added
+
+- Added industry templates for SaaS, hardware, AI Agent, consumer app, and education products.
+- Added One-Hour PRD Review mode for auditing existing PRDs before rewriting them.
+- Added Investor Challenge mode for market, moat, business model, traction, team, and 90-day proof questioning.
+- Added output format guidance for Markdown, DOCX-ready documents, PPT outlines, and Feishu/Lark-ready structures.
+- Added Product Definition Self-Checker to detect invented evidence, bloated MVPs, missing metrics, weak differentiation, unclear buyers, and hidden risks.
+- Added new sample prompts for review, investor challenge, industry templates, and multi-format output.
+- Improved README so new users can understand usage in under one minute.
+
+### Changed
+
+- Rewrote `SKILL.md` with explicit mode routing and reference-loading rules.
+- Rewrote phase guide, question bank, and output package references in cleaner Chinese.
+- Updated OpenAI agent metadata.
+- Updated roadmap to mark v0.2.0 items as complete.
+
 ## v0.1.0 - 2026-06-26
 
 Initial public release.
@@ -26,7 +47,3 @@ Initial public release.
   - growth and iteration plan
 - Added OpenAI agent metadata in `agents/openai.yaml`.
 - Added sample prompts and contribution guide.
-
-### Notes
-
-This version focuses on 0-1 product definition. Later versions can expand into launched-product growth, analytics diagnosis, pricing, GTM, and investor memo workflows.

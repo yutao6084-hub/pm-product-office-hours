@@ -1,16 +1,32 @@
 # PM Product Office Hours
 
-> Strict product-definition Office Hours skill for founders, CEOs, and 0-1 product builders.
+> Strict product-definition Office Hours skill for founders, CEOs, product managers, and 0-1 builders.
 
-**Repository description**：面向创业者、CEO 和 0-1 产品负责人的严厉产品定义 Office Hours Skill，帮助把模糊想法追问成可验证、可执行、可融资沟通的产品定义包。
+一个面向创业者、CEO、产品经理的 Codex Skill：用“严厉面试官”式问答，把模糊产品想法、PRD 草稿、融资叙事或增长问题，拆成可验证、可执行、可评审的产品定义包。
 
-**Recommended GitHub Topics**：`product-management`、`prd`、`startup`、`codex-skill`、`mvp`、`product-strategy`、`founder`、`product-discovery`
+## 30 秒看懂
 
-**Current release**：`v0.1.0`，初始开源版本。
+它不是普通 PRD 生成器。它会先追问：
 
-一个给创业者、CEO、0-1 产品负责人的 Codex Skill：用“严厉面试官”式问答，把模糊产品想法逼到清晰、可验证、可执行的产品定义包。
+- 真实用户是谁？
+- 最近一次具体痛点发生在哪里？
+- 今天用什么替代方案？
+- 有什么证据，而不是创始人脑补？
+- MVP 能不能砍到一个最小楔子？
+- 指标、验收标准、边界场景是否清楚？
+- 投资人会怎么质疑市场、护城河、商业模式和团队优势？
 
-它不是普通 PRD 生成器。它会先追问真实用户、具体场景、当前替代方案、验证证据、MVP 取舍和增长假设，然后再输出产品定义、PRD、MVP、路线图、指标、验证计划和风险清单。
+然后再输出 PRD、MVP、路线图、验证计划、指标体系、自检报告，以及 DOCX/PPT/飞书文档可用结构。
+
+## v0.2.0 新增能力
+
+| 能力 | 说明 |
+|---|---|
+| 行业模板 | 支持 SaaS、硬件、AI Agent、消费 App、教育等产品的专属追问、指标和风险检查 |
+| 一小时 PRD 评审 | 用户已有 PRD 时，先审漏洞、缺失决策、MVP 范围、指标和可交付性，再给修正版 |
+| 投资人视角质询 | 从市场、护城河、商业模式、团队优势、证据和 90 天里程碑进行严厉挑战 |
+| 多格式输出 | 支持 Markdown、DOCX-ready、PPT 10 页大纲、飞书/Lark 文档块结构 |
+| 自检器 | 检查是否脑补证据、MVP 是否过大、指标是否缺失、差异化是否空泛 |
 
 ## 适合谁
 
@@ -18,37 +34,7 @@
 - 0-1 产品负责人
 - 正在定义新产品的产品经理
 - 准备做 MVP、融资材料、立项评审、内部产品决策的人
-
-## 解决什么痛点
-
-很多产品想法的问题不是“不会写 PRD”，而是：
-
-- 用户是谁没说清楚
-- 痛点没有证据
-- MVP 做得太大
-- 需求优先级靠感觉
-- 指标体系后补
-- 产品定位像口号
-- 创始人/CEO 的判断没有被严厉质询
-
-这个 Skill 的目标是先问清楚，再生成文档。
-
-## 能输出什么
-
-默认输出完整产品定义包：
-
-1. 产品定义一页纸
-2. PRD 核心草案
-3. MVP 范围与非范围
-4. 需求优先级表
-5. User Stories / Job Stories
-6. 用户旅程与核心流程
-7. 0-1 验证计划
-8. 指标体系
-9. 路线图
-10. 风险与假设清单
-11. CEO / 团队 / 投资人简版叙事
-12. 上线后增长与迭代计划
+- 已有 PRD，但需要严厉审查漏洞的人
 
 ## 安装
 
@@ -67,47 +53,69 @@ C:\Users\<你的用户名>\.codex\skills\pm-product-office-hours
 
 重启 Codex 或开启新会话后即可使用。
 
-## 使用方式
+## 最快使用
+
+### 1. 定义一个新产品
 
 ```text
-使用 $pm-product-office-hours 帮我把这个产品想法梳理成完整产品定义包。
+使用 $pm-product-office-hours。请严格追问我，帮我把这个产品想法梳理成完整产品定义包。
 ```
 
-也可以更具体：
+### 2. 评审已有 PRD
 
 ```text
-使用 $pm-product-office-hours 严格追问我，帮我定义一个面向家长和儿童的体感训练产品，从用户、痛点、MVP、指标到 PRD 都输出。
+使用 $pm-product-office-hours 的一小时 PRD 评审模式。我会贴一份 PRD，请你先审漏洞，再输出修正版。
 ```
 
-## 工作方式
+### 3. 用投资人视角质询
 
-Skill 会按阶段推进：
+```text
+使用 $pm-product-office-hours 的投资人质询模式。请挑战我的市场、护城河、商业模式、团队优势和 90 天验证计划。
+```
 
-1. 判断产品阶段
-2. 追问真实用户和具体场景
-3. 追问当前替代方案
-4. 追问验证证据
-5. 收窄 MVP
-6. 输出定位与差异化
-7. 生成 PRD 与产品定义包
-8. 补充验证计划、指标、路线图和增长方案
+### 4. 使用行业模板
 
-它会拒绝模糊描述，例如：
+```text
+使用 $pm-product-office-hours，并按硬件 + 教育产品模板追问我。请特别检查 BOM、儿童体验、家长价值、训练反馈和非医疗化表达。
+```
 
-- “面向中小企业”
-- “体验更好”
-- “AI 赋能”
-- “市场很大”
-- “用户会喜欢”
+### 5. 输出多格式
 
-并追问成：
+```text
+使用 $pm-product-office-hours。请输出 Markdown 产品定义包，并附上 DOCX-ready 结构、PPT 10 页大纲和飞书文档块结构。
+```
 
-- 哪一个真实用户？
-- 最近一次在什么场景痛？
-- 今天怎么解决？
-- 为什么不用现有方案？
-- 有没有付费、使用、排队、签约或留存证据？
-- 两周内只做一个功能，做什么？
+更多示例见 [examples/sample-prompts.md](examples/sample-prompts.md)。
+
+## 能输出什么
+
+默认输出完整产品定义包：
+
+1. 产品定义一页纸
+2. PRD 核心草案
+3. MVP 范围与非范围
+4. 需求优先级表
+5. User Stories / Job Stories
+6. 用户旅程与核心流程
+7. 0-1 验证计划
+8. 指标体系
+9. 路线图
+10. 风险与假设清单
+11. CEO / 团队 / 投资人简版叙事
+12. 上线后增长与迭代计划
+13. 自检评分与修正建议
+14. Markdown / DOCX / PPT / 飞书可用结构
+
+## 工作模式
+
+| 模式 | 适用场景 |
+|---|---|
+| 0-1 Product Definition | 从想法、原型或模糊方向开始定义产品 |
+| One-Hour PRD Review | 已有 PRD/需求列表，需要严厉评审 |
+| Investor Challenge | 准备融资、路演、董事会或 CEO 级产品质询 |
+| Industry Template | SaaS、硬件、AI Agent、消费 App、教育等垂直产品 |
+| Output Formatting | 需要 Markdown、DOCX、PPT、飞书文档结构 |
+| Self-Check | 检查证据、MVP、指标、差异化、商业模式是否站得住 |
 
 ## 仓库结构
 
@@ -119,12 +127,25 @@ pm-product-office-hours/
 ├─ references/
 │  ├─ phases.md
 │  ├─ question-bank.md
-│  └─ output-pack.md
+│  ├─ output-pack.md
+│  ├─ industry-templates.md
+│  ├─ prd-review-mode.md
+│  ├─ investor-challenge.md
+│  ├─ output-formats.md
+│  └─ self-checker.md
 ├─ examples/
 │  └─ sample-prompts.md
+├─ CHANGELOG.md
+├─ RELEASE_NOTES.md
 ├─ ROADMAP.md
 ├─ CONTRIBUTING.md
 └─ LICENSE
+```
+
+## 推荐 GitHub Topics
+
+```text
+product-management, prd, startup, codex-skill, mvp, product-strategy, founder, product-discovery, product-review, investor-readiness
 ```
 
 ## 设计原则

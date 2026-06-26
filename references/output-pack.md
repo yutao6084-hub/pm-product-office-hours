@@ -7,6 +7,7 @@ Use this structure for the final output unless the user requests a narrower arti
 - Product name
 - One-sentence positioning, <= 15 Chinese characters when possible
 - Target user
+- Buyer, if different from user
 - Painful scene
 - Current substitute
 - MVP wedge
@@ -71,7 +72,7 @@ Use P0/P1/P2 with reason and dependency.
 
 Prefer Job Story format:
 
-"当 [场景]，我想 [动机]，以便 [结果]。"
+“当 [场景]，我想 [动机]，以便 [结果]。”
 
 ## 6. Validation plan
 
@@ -127,7 +128,7 @@ Only include if relevant:
 - Customer feedback cadence
 - Experiment backlog
 
-## Required uncertainty section
+## 12. Required uncertainty section
 
 Always include:
 
@@ -136,3 +137,12 @@ Always include:
 - Unknowns
 - Questions the CEO must answer
 - Questions to ask users next
+
+## 13. Self-check summary
+
+Always include after substantial documents:
+
+| Check item | Score | Issue | Fix |
+|---|---:|---|---|
+
+Use the rubric in `self-checker.md`.
